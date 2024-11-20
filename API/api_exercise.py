@@ -1,5 +1,6 @@
 import requests
 import random
+import html
 
 # API website: https://opentdb.com/api_config.php
 
@@ -10,6 +11,7 @@ def print_question(question_data):
 
     # Shuffle the answer choices to randomize the order
     answers = question_data['incorrect_answers'] + [question_data['correct_answer']]
+    answers = [html.unescape(option) for option in answers]
     random.shuffle(answers)
 
     for i, answer in enumerate(answers):
