@@ -56,5 +56,6 @@ pip install -r requirements.txt
 Once the setup is complete, you can start the quiz game by running:
 
 ```bash
-python main.py
+cd API/
+python api_exercise.py
 ```
