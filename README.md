@@ -56,5 +56,6 @@ pip install -r requirements.txt
 Once the setup is complete, you can start the quiz game by running:
 
 ```bash
+cd API/
 python main.py
 ```
