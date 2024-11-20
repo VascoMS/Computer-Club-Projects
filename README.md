@@ -57,5 +57,5 @@ Once the setup is complete, you can start the quiz game by running:
 
 ```bash
 cd API/
-python main.py
+python api_exercise.py
 ```
