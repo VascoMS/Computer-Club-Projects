@@ -20,6 +20,17 @@ def print_question(question_data):
     return answers
 
 def main():
+    '''
+    CHALLENGE:
+
+    Add a counter that tracks the player's score, each question is worth 1 point. 
+    At the end print the final score, if it's larger than half the number of 
+    questions, the player has passed, else he has failed. Make sure the player is 
+    informed if he has passed or failed
+    
+    '''
+    
+    
     response = requests.get("https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple")
 
     if(not response.ok):
